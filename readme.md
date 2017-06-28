@@ -27,6 +27,11 @@
 <img src="/Data/2-1normal.gif" width="404">
 <img src="/Data/2-1test.gif" width="404">
 
+
+
+Normal Subway Network             |  L-Train Closure
+:-------------------------:|:-------------------------:
+<img src="/Data/2-3normal.gif" width="404">  |  <img src="/Data/2-3test.gif" width="404">
 #### Clusters Business
 ##### 1) 
 
