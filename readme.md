@@ -2,6 +2,13 @@
 
 ### Fernando Melchor
 
+Normal Subway Network             |  L-Train Closure
+:-------------------------:|:-------------------------:
+<img src="/Data/2-0normal.gif" width="604">  |  <img src="/Data/2-0test.gif" width="604">
+<img src="/Data/2-1normal.gif" width="604">  |  <img src="/Data/2-1test.gif" width="604">
+<img src="/Data/2-2normal.gif" width="604">  |  <img src="/Data/2-2test.gif" width="604">
+<img src="/Data/2-3normal.gif" width="604">  |  <img src="/Data/2-3test.gif" width="604">
+
 ##### Abstract—
 Modelling systems as networks provides valuable insights. Calculating different measurements of connectivity, efficiency and capacity can help us to answer complicated questions. In this project, I explore the NYC Subway System Network and the impact of the L-Train partial closure. I propose a simulation that can help people understand the impact on the user experience depending on the origin and destination of the trip. 
 
@@ -27,14 +34,15 @@ Through the development of this report different sources of data were used to pr
 #### Data & Methods
 
 ##### Data
-•	American Community Survey 2015: Median Age, Median Household Income, Percentage of White Population and Total Population, this survey was used and represented at the census tract level. (Census Bureau, 2017)
-•	American Community Survey LODES 2014 LEHD Origin-Destination Employment Statistics. This information is available at the census block level and was aggregated at the census tract level. (Census Bureau, 2017)
-•	Census Bureau. NYC Census tracts shapefiles.
-•	NYC Open Data. Subway line and Subway stations data (NYC Open Data, 2017) (NYC Open Data, 2017)
-•	Yelp Fusion API. Used to get the businesses in the affected area. (Yelp, 2017)
-•	Mapzen Isochrone API. Used to calculate walking distances polygons. (Mapzen, 2017)
-•	MTA Statistics. Average week-day usage of L-train stations (MTA, Average Weekday Ridership, 2017) 
-•	MTA Subway Lines Information. Line Operation Booklet (MTA, Subway Lines Information, 2017)
+
+*     American Community Survey 2015: Median Age, Median Household Income, Percentage of White Population and Total Population, this survey was used and represented at the census tract level. (Census Bureau, 2017)
+*     American Community Survey LODES 2014 LEHD Origin-Destination Employment Statistics. This information is available at the census block level and was aggregated at the census tract level. (Census Bureau, 2017)
+*	Census Bureau. NYC Census tracts shapefiles.
+*	NYC Open Data. Subway line and Subway stations data (NYC Open Data, 2017) (NYC Open Data, 2017)
+*	Yelp Fusion API. Used to get the businesses in the affected area. (Yelp, 2017)
+*	Mapzen Isochrone API. Used to calculate walking distances polygons. (Mapzen, 2017)
+*	MTA Statistics. Average week-day usage of L-train stations (MTA, Average Weekday Ridership, 2017) 
+*	MTA Subway Lines Information. Line Operation Booklet (MTA, Subway Lines Information, 2017)
 
 ##### Methodology
 The first step in the methodology was the definition of the affected area and the characterization of it. This was done by selecting the areas around the L-Train stations within 15-minute walking distance. The census tracts intersecting with this area were used to characterize the residents. The whole extent of the L-Train Line was used for the definition of the area of interest considering that the overall connectivity and usefulness of the Line is affected by stopping the service from Bedford in Brooklyn to 8th Ave in Manhattan. The results can be consulted on Appendix Map 1.
@@ -44,13 +52,6 @@ To understand the impact on businesses, data from Yelp was used. A list of the m
 From the beginning, I wanted to understand the importance of the L-Train stations to the whole subway system. To do this I created a network representation of the subway system, based on the operation rules of the subway during weekday morning rush-hour. This network representation gives us to capability to measure the system the performance and efficiency. I provided the Average Shortest Path Length as the statistics to compare the connectivity of different areas of the city. In the Appendix Map 6  & 7 the change in connectivity can be appreciated, in addition an animated version of the change is available at the project link.
 Finally, after doing this report, I realized that it was difficult to visualize and quantify the impact on people’s quality of life. So, I decided to use the networks previously developed to build a simulation tool that can explain in a more tangible way the effects on the commute of people. Ideally, the simulation would be able to quantify the percentage time increase for users, this early version only calculates the shortest route and compares the before and after closure of the L-Train stations. The simulation is available at the project link.
 
-
-Normal Subway Network             |  L-Train Closure
-:-------------------------:|:-------------------------:
-<img src="/Data/2-0normal.gif" width="604">  |  <img src="/Data/2-0test.gif" width="604">
-<img src="/Data/2-1normal.gif" width="604">  |  <img src="/Data/2-1test.gif" width="604">
-<img src="/Data/2-2normal.gif" width="604">  |  <img src="/Data/2-2test.gif" width="604">
-<img src="/Data/2-3normal.gif" width="604">  |  <img src="/Data/2-3test.gif" width="604">
 
 #### Connectivity Change
 <img src="/Data/connect.gif" width="808">
