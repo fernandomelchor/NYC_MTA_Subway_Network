@@ -1,6 +1,8 @@
 # NYC MTA Subway System Network and the L-Train Closure
 
-### Fernando Melchor
+### by Fernando Melchor
+
+##### Abstract— Modelling systems as networks provides valuable insights. Calculating different measurements of connectivity, efficiency and capacity can help us to answer complicated questions. In this project, I explore the NYC Subway System Network and the impact of the L-Train partial closure. I propose a simulation that can help people understand the impact on the user experience depending on the origin and destination of the trip. 
 
 Normal Subway Network             |  L-Train Closure
 :-------------------------:|:-------------------------:
@@ -8,9 +10,6 @@ Normal Subway Network             |  L-Train Closure
 <img src="/Data/2-1normal.gif" width="604">  |  <img src="/Data/2-1test.gif" width="604">
 <img src="/Data/2-2normal.gif" width="604">  |  <img src="/Data/2-2test.gif" width="604">
 <img src="/Data/2-3normal.gif" width="604">  |  <img src="/Data/2-3test.gif" width="604">
-
-##### Abstract—
-Modelling systems as networks provides valuable insights. Calculating different measurements of connectivity, efficiency and capacity can help us to answer complicated questions. In this project, I explore the NYC Subway System Network and the impact of the L-Train partial closure. I propose a simulation that can help people understand the impact on the user experience depending on the origin and destination of the trip. 
 
 #### Introduction
 
